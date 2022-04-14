@@ -281,7 +281,7 @@ if __name__ == '__main__':
             args.eval_data = 'bilibili-clip'
             eval_video_list = glob.glob('./wild_eval/source_video/{}/*.mp4'.format(args.eval_data))
             for path_name in eval_video_list:
-                print(path_name)
+                print(f'processing video... {path_name}')
                 args.viz_video_path = path_name
                 args.frame_rate = 30
                 Vis = Visualization(ckpt_path)
